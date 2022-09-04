@@ -11,11 +11,13 @@ namespace MyApp.DataAccessLayer.Infrastructure.Repository
     {
         private ApplicationDBContext _dbContext;
         public ICategoryRespository Category { get;private set; }
+        public IProductRespository Product { get; private set; }
 
         public UnitOfWork(ApplicationDBContext dBContext)
         {
             _dbContext = dBContext;
             Category = new CategoryRepository(dBContext);
+            Product = new ProductRepository(dBContext);
         }
 
 

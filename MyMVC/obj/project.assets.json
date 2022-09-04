@@ -9922,11 +9922,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Projects\\MyMVC\\MyMVC\\MyMVC.csproj",
+      "projectUniqueName": "D:\\Projects\\MYMVC\\MyMVC\\MyMVC.csproj",
       "projectName": "MyMVC",
-      "projectPath": "D:\\Projects\\MyMVC\\MyMVC\\MyMVC.csproj",
+      "projectPath": "D:\\Projects\\MYMVC\\MyMVC\\MyMVC.csproj",
       "packagesPath": "C:\\Users\\Vaibhav\\.nuget\\packages\\",
-      "outputPath": "D:\\Projects\\MyMVC\\MyMVC\\obj\\",
+      "outputPath": "D:\\Projects\\MYMVC\\MyMVC\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Vaibhav\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -9943,8 +9943,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\Projects\\MyMVC\\MyApp.DataAccessLayer\\MyApp.DataAccessLayer.csproj": {
-              "projectPath": "D:\\Projects\\MyMVC\\MyApp.DataAccessLayer\\MyApp.DataAccessLayer.csproj"
+            "D:\\Projects\\MYMVC\\MyApp.DataAccessLayer\\MyApp.DataAccessLayer.csproj": {
+              "projectPath": "D:\\Projects\\MYMVC\\MyApp.DataAccessLayer\\MyApp.DataAccessLayer.csproj"
             }
           }
         }

@@ -10,7 +10,7 @@ using MyApp.DataAccessLayer;
 
 #nullable disable
 
-namespace MyApp.DataAccessLayer
+namespace MyApp.DataAccessLayer.Migrations
 {
     [DbContext(typeof(ApplicationDBContext))]
     [Migration("20220831173927_category")]

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "DpRAZPCxqmafbbwG8JneBnJtHdHnDLF05+HLAGq0Vovs6kpt/do9Sd/mtf5je0tXHlzujP/1rQzNSbfygsf8UQ==",
+  "dgSpecHash": "s9SKw7DrRovl/1vfvIM8AMH9Q5ISMl5+yLmnNpvuJgHrcDc4tJTSqrPYNcyApgVayXqYv7+Cg/kkJ5ZpAucWKQ==",
   "success": true,
-  "projectFilePath": "D:\\Projects\\MyMVC\\MyApp.Models\\MyApp.Models.csproj",
+  "projectFilePath": "D:\\Projects\\MYMVC\\MyApp.Models\\MyApp.Models.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

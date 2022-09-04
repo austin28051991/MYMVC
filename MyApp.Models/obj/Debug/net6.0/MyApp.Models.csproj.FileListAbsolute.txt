@@ -10,3 +10,15 @@ C:\Users\Vaibhav\source\repos\MyMVC\MyApp.Models\obj\Debug\net6.0\MyApp.Models.d
 C:\Users\Vaibhav\source\repos\MyMVC\MyApp.Models\obj\Debug\net6.0\refint\MyApp.Models.dll
 C:\Users\Vaibhav\source\repos\MyMVC\MyApp.Models\obj\Debug\net6.0\MyApp.Models.pdb
 C:\Users\Vaibhav\source\repos\MyMVC\MyApp.Models\obj\Debug\net6.0\ref\MyApp.Models.dll
+D:\Projects\MYMVC\MyApp.Models\bin\Debug\net6.0\MyApp.Models.deps.json
+D:\Projects\MYMVC\MyApp.Models\bin\Debug\net6.0\MyApp.Models.dll
+D:\Projects\MYMVC\MyApp.Models\bin\Debug\net6.0\MyApp.Models.pdb
+D:\Projects\MYMVC\MyApp.Models\obj\Debug\net6.0\MyApp.Models.csproj.AssemblyReference.cache
+D:\Projects\MYMVC\MyApp.Models\obj\Debug\net6.0\MyApp.Models.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\MYMVC\MyApp.Models\obj\Debug\net6.0\MyApp.Models.AssemblyInfoInputs.cache
+D:\Projects\MYMVC\MyApp.Models\obj\Debug\net6.0\MyApp.Models.AssemblyInfo.cs
+D:\Projects\MYMVC\MyApp.Models\obj\Debug\net6.0\MyApp.Models.csproj.CoreCompileInputs.cache
+D:\Projects\MYMVC\MyApp.Models\obj\Debug\net6.0\MyApp.Models.dll
+D:\Projects\MYMVC\MyApp.Models\obj\Debug\net6.0\refint\MyApp.Models.dll
+D:\Projects\MYMVC\MyApp.Models\obj\Debug\net6.0\MyApp.Models.pdb
+D:\Projects\MYMVC\MyApp.Models\obj\Debug\net6.0\ref\MyApp.Models.dll
