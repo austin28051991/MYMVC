@@ -1,0 +1,15 @@
+C:\Users\Vaibhav\source\repos\MyMVC\MyApp.DataAccessLayer\bin\Debug\net6.0\MyApp.DataAccessLayer.deps.json
+C:\Users\Vaibhav\source\repos\MyMVC\MyApp.DataAccessLayer\bin\Debug\net6.0\MyApp.DataAccessLayer.dll
+C:\Users\Vaibhav\source\repos\MyMVC\MyApp.DataAccessLayer\bin\Debug\net6.0\MyApp.DataAccessLayer.pdb
+C:\Users\Vaibhav\source\repos\MyMVC\MyApp.DataAccessLayer\bin\Debug\net6.0\MyApp.Models.dll
+C:\Users\Vaibhav\source\repos\MyMVC\MyApp.DataAccessLayer\bin\Debug\net6.0\MyApp.Models.pdb
+C:\Users\Vaibhav\source\repos\MyMVC\MyApp.DataAccessLayer\obj\Debug\net6.0\MyApp.DataAccessLayer.csproj.AssemblyReference.cache
+C:\Users\Vaibhav\source\repos\MyMVC\MyApp.DataAccessLayer\obj\Debug\net6.0\MyApp.DataAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Vaibhav\source\repos\MyMVC\MyApp.DataAccessLayer\obj\Debug\net6.0\MyApp.DataAccessLayer.AssemblyInfoInputs.cache
+C:\Users\Vaibhav\source\repos\MyMVC\MyApp.DataAccessLayer\obj\Debug\net6.0\MyApp.DataAccessLayer.AssemblyInfo.cs
+C:\Users\Vaibhav\source\repos\MyMVC\MyApp.DataAccessLayer\obj\Debug\net6.0\MyApp.DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\Vaibhav\source\repos\MyMVC\MyApp.DataAccessLayer\obj\Debug\net6.0\MyApp.DataAccessLayer.csproj.CopyComplete
+C:\Users\Vaibhav\source\repos\MyMVC\MyApp.DataAccessLayer\obj\Debug\net6.0\MyApp.DataAccessLayer.dll
+C:\Users\Vaibhav\source\repos\MyMVC\MyApp.DataAccessLayer\obj\Debug\net6.0\refint\MyApp.DataAccessLayer.dll
+C:\Users\Vaibhav\source\repos\MyMVC\MyApp.DataAccessLayer\obj\Debug\net6.0\MyApp.DataAccessLayer.pdb
+C:\Users\Vaibhav\source\repos\MyMVC\MyApp.DataAccessLayer\obj\Debug\net6.0\ref\MyApp.DataAccessLayer.dll
