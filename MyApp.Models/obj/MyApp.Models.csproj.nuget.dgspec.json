@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Projects\\MYMVC\\MyApp.Models\\MyApp.Models.csproj": {}
+    "D:\\Projects\\MyMVC\\MyApp.Models\\MyApp.Models.csproj": {}
   },
   "projects": {
-    "D:\\Projects\\MYMVC\\MyApp.Models\\MyApp.Models.csproj": {
+    "D:\\Projects\\MyMVC\\MyApp.Models\\MyApp.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\MYMVC\\MyApp.Models\\MyApp.Models.csproj",
+        "projectUniqueName": "D:\\Projects\\MyMVC\\MyApp.Models\\MyApp.Models.csproj",
         "projectName": "MyApp.Models",
-        "projectPath": "D:\\Projects\\MYMVC\\MyApp.Models\\MyApp.Models.csproj",
+        "projectPath": "D:\\Projects\\MyMVC\\MyApp.Models\\MyApp.Models.csproj",
         "packagesPath": "C:\\Users\\Vaibhav\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\MYMVC\\MyApp.Models\\obj\\",
+        "outputPath": "D:\\Projects\\MyMVC\\MyApp.Models\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Vaibhav\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -39,6 +39,12 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Mvc.ViewFeatures": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

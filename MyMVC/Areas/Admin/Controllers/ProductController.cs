@@ -1,8 +1,10 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using MyApp.DataAccessLayer;
 using MyApp.DataAccessLayer.Infrastructure.IRepository;
 using MyApp.Models;
 using MyApp.Models.ViewModels;
+using System.Security.Cryptography.X509Certificates;
 
 namespace MyMVC.Areas.Admin.Controllers
 {
@@ -11,10 +13,12 @@ namespace MyMVC.Areas.Admin.Controllers
     public class ProductController : Controller
     {
         private IUnitOfWork _unitofwork;
+        private IWebHostEnvironment _webHostEnvironment;
 
-        public ProductController(IUnitOfWork unitofwork)
+        public ProductController(IUnitOfWork unitofwork, IWebHostEnvironment webHostEnvironment = null)
         {
             _unitofwork = unitofwork;
+            _webHostEnvironment = webHostEnvironment;
         }
         public IActionResult Index()
         {
@@ -33,15 +37,24 @@ namespace MyMVC.Areas.Admin.Controllers
         [HttpGet]
         public IActionResult CreateUpdate(int? id)
         {
-            CategoryVM vm = new CategoryVM();
+            ProductVM vm = new ProductVM()
+            {
+                product = new(),
+                Categories = _unitofwork.Category.GetAll().Select(x => new SelectListItem()
+                {
+                    Text = x.Name,
+                    Value = x.Id.ToString()
+                }
+                )
+            };
             if (id == null || id == 0)
             {
                 return View(vm);
             }
             else
             {
-                vm.category = _unitofwork.Category.GetById(x => x.Id == id);
-                if (vm.category == null)
+                vm.product = _unitofwork.Product.GetById(x => x.Id == id);
+                if (vm.product == null)
                 {
                     return NotFound();
                 }
@@ -93,21 +106,27 @@ namespace MyMVC.Areas.Admin.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult CreateUpdate(CategoryVM vm)
+        public IActionResult CreateUpdate(ProductVM vm,IFormFile file)
         {
+            string FileName = "";
             if (ModelState.IsValid)
             {
-                if (vm.category.Id == 0)
+                if (file != null)
                 {
-                    _unitofwork.Category.Add(vm.category);
-                    TempData["Success"] = "Category Created Successfully.";
+                    string uploaddir = Path.Combine(_webHostEnvironment.WebRootPath, "ProductImage");
+                    FileName = Guid.NewGuid().ToString() + "-" + file.FileName;
+                    string filepath = Path.Combine(uploaddir, FileName);
+                    using (var fileStream = new FileStream(filepath, FileMode.Create))
+                    {
+                        file.CopyTo(fileStream);
+                    }
+                    vm.product.ImageUrl = @"\ProductImage\" + FileName;
                 }
-                else
+                if(vm.product.Id==0)
                 {
-                    _unitofwork.Category.Update(vm.category);
-                    TempData["Success"] = "Category Updated Successfully.";
-
+                    _unitofwork.Product.Add(vm.product);
                 }
+                
                     _unitofwork.save();
                     
                     return RedirectToAction("Index");

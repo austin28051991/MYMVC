@@ -528,3 +528,8 @@ D:\Projects\MYMVC\MyMVC\obj\Debug\net6.0\scopedcss\projectbundle\MyMVC.bundle.sc
 D:\Projects\MYMVC\MyMVC\obj\Debug\net6.0\MyMVC.csproj.CopyComplete
 D:\Projects\MYMVC\MyMVC\obj\Debug\net6.0\MyMVC.genruntimeconfig.cache
 D:\Projects\MYMVC\MyMVC\obj\Debug\net6.0\ref\MyMVC.dll
+D:\Projects\MyMVC\MyMVC\bin\Debug\net6.0\Microsoft.AspNetCore.JsonPatch.dll
+D:\Projects\MyMVC\MyMVC\bin\Debug\net6.0\Microsoft.DotNet.PlatformAbstractions.dll
+D:\Projects\MyMVC\MyMVC\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+D:\Projects\MyMVC\MyMVC\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
+D:\Projects\MyMVC\MyMVC\obj\Debug\net6.0\MyMVC.MvcApplicationPartsAssemblyInfo.cs
