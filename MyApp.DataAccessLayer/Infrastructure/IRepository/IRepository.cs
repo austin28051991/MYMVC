@@ -9,8 +9,8 @@ namespace MyApp.DataAccessLayer.Infrastructure.IRepository
 {
     public interface IRepository<T> where T : class
     {
-        IEnumerable<T> GetAll();
-        T GetById(Expression<Func<T, bool>> predicate);
+        IEnumerable<T> GetAll(string? includeProperties=null);
+        T GetById(Expression<Func<T, bool>> predicate, string? includeProperties = null);
 
         void Add(T entity);
 

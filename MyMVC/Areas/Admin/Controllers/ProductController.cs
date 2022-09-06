@@ -20,6 +20,17 @@ namespace MyMVC.Areas.Admin.Controllers
             _unitofwork = unitofwork;
             _webHostEnvironment = webHostEnvironment;
         }
+
+
+        #region APICALL
+        public IActionResult AllProducts()
+        {
+            var products = _unitofwork.Product.GetAll(includeProperties: "category");
+            return Json(new { data = products });
+
+        }
+
+        #endregion
         public IActionResult Index()
         {
             ProductVM vm = new ProductVM();
@@ -116,6 +127,17 @@ namespace MyMVC.Areas.Admin.Controllers
                     string uploaddir = Path.Combine(_webHostEnvironment.WebRootPath, "ProductImage");
                     FileName = Guid.NewGuid().ToString() + "-" + file.FileName;
                     string filepath = Path.Combine(uploaddir, FileName);
+
+                    if (vm.product.ImageUrl!=null)
+                    {
+                        var oldpath = Path.Combine(_webHostEnvironment.WebRootPath, vm.product.ImageUrl.TrimStart('\\'));
+                        if(System.IO.File.Exists(oldpath))
+                        {
+                            System.IO.File.Delete(oldpath);
+                        }
+                    }
+
+
                     using (var fileStream = new FileStream(filepath, FileMode.Create))
                     {
                         file.CopyTo(fileStream);
@@ -125,6 +147,12 @@ namespace MyMVC.Areas.Admin.Controllers
                 if(vm.product.Id==0)
                 {
                     _unitofwork.Product.Add(vm.product);
+                    TempData["success"] = "Product Created";
+                }
+                else
+                {
+                    _unitofwork.Product.Update(vm.product);
+                    TempData["success"] = "Product Updated";
                 }
                 
                     _unitofwork.save();

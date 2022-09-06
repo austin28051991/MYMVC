@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "lvlF2At4dd5IkqwvLFaU1VahiT+oumkjhVC++S+Wfog=",
+  "Hash": "anZy8j/TGuF4NS3yaLfIHQWOYldTWBCxiXMviHHGJQw=",
   "Source": "MyMVC",
   "BasePath": "_content/MyMVC",
   "Mode": "Default",
@@ -1086,6 +1086,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Identity": "D:\\Projects\\MyMVC\\MyMVC\\wwwroot\\ProductImage\\057ddd62-5413-4bca-8636-b54ddf85e96e-images.png",
+      "SourceId": "MyMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\MyMVC\\MyMVC\\wwwroot\\",
+      "BasePath": "_content/MyMVC",
+      "RelativePath": "ProductImage/057ddd62-5413-4bca-8636-b54ddf85e96e-images.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\ProductImage\\057ddd62-5413-4bca-8636-b54ddf85e96e-images.png"
     }
   ]
 }

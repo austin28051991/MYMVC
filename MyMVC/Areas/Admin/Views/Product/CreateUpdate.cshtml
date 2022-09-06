@@ -1,6 +1,7 @@
 ﻿@model MyApp.Models.ViewModels.ProductVM
 <form method="post" asp-action="CreateUpdate" enctype="multipart/form-data">
     <input type="hidden" asp-for="product.Id" />
+    <input type="hidden" asp-for="product.ImageUrl" />
     <div class="border p-3 mt-4">
         <div class="row pb-3">
             <h2 class="text-primary">@((Model.product == null || Model.product.Id == 0) ? "Create" : "Update") Product</h2>

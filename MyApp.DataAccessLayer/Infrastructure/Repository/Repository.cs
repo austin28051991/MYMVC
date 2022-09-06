@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -17,6 +18,7 @@ namespace MyApp.DataAccessLayer.Infrastructure.Repository
         public Repository(ApplicationDBContext dbContext)
         {
             _dbContext = dbContext;
+            
             _dbSet = _dbContext.Set<T>();
         }
 
@@ -35,14 +37,31 @@ namespace MyApp.DataAccessLayer.Infrastructure.Repository
            _dbSet.RemoveRange(entities);
         }
 
-        public IEnumerable<T> GetAll()
+        public IEnumerable<T> GetAll(string? includeProperties=null)
         {
-            return _dbSet.ToList();
+            IQueryable<T> query = _dbSet;
+            if(includeProperties!=null)
+            {
+                foreach (var item in includeProperties.Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries))
+                {
+                    query = query.Include(item);
+                }
+            }
+            return query.ToList();
         }
 
-        public T GetById(Expression<Func<T, bool>> predicate)
+        public T GetById(Expression<Func<T, bool>> predicate, string? includeProperties)
         {
-            return _dbSet.Where(predicate).FirstOrDefault();
+            IQueryable<T> query = _dbSet;
+            query = _dbSet.Where(predicate);
+            if (includeProperties != null)
+            {
+                foreach (var item in includeProperties.Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries))
+                {
+                    query = query.Include(item);
+                }
+            }
+            return query.FirstOrDefault();
         }
     }
 }
