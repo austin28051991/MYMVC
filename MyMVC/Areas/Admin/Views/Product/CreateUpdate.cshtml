@@ -45,7 +45,7 @@
         <button class="btn btn-primary" onclick="return ValidateEmpty()" type="submit">@((Model.product == null || Model.product.Id == 0) ? "Create" : "Update")</button>
 
     </div>
-    <a asp-action="Index" asp-controller="Category">Back to List</a>
+    <a asp-action="Index" asp-controller="Product">Back to List</a>
 </form>
 
 @section scripts{
@@ -69,6 +69,15 @@
                  return true;
           }
         }
+
+        tinymce.init({
+            selector: 'textarea',
+            plugins: 'a11ychecker advcode casechange export formatpainter image editimage linkchecker autolink lists checklist media mediaembed pageembed permanentpen powerpaste table advtable tableofcontents tinycomments tinymcespellchecker',
+            toolbar: 'a11ycheck addcomment showcomments casechange checklist code export formatpainter image editimage pageembed permanentpen table tableofcontents',
+            toolbar_mode: 'floating',
+            tinycomments_mode: 'embedded',
+            tinycomments_author: 'Author name',
+        });
     </script>
 
 }

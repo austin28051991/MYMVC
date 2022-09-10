@@ -78,21 +78,7 @@ namespace MyMVC.Areas.Admin.Controllers
             
         }
 
-        [HttpGet]
-        public IActionResult Delete(int? id)
-        {
-            if (id == null || id == 0)
-            {
-                return NotFound();
-            }
-            var category = _unitofwork.Category.GetById(x => x.Id == id);
-            if (category == null)
-            {
-                return NotFound();
-            }
-            return View(category);
-        }
-
+       
 
 
 
@@ -166,21 +152,36 @@ namespace MyMVC.Areas.Admin.Controllers
             }
         }
 
-        [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
-        public IActionResult DeleteData(int? id)
+        #region deletedata
+
+        [HttpDelete]
+
+        
+        public IActionResult Delete(int? id)
         {
-            var category = _unitofwork.Category.GetById(x => x.Id == id);
-            if (category == null)
+            var product = _unitofwork.Product.GetById(x => x.Id == id);
+            if (product == null)
             {
-                return NotFound();
+                return Json(new {success=false,message="Error in Fetching Data"});
             }
-            _unitofwork.Category.Delete(category);
-            _unitofwork.save();
-            TempData["Success"] = "Category Deleted Successfully.";
-            return RedirectToAction("Index");
+            else
+            {
+                var oldpath = Path.Combine(_webHostEnvironment.WebRootPath, product.ImageUrl.TrimStart('\\'));
+                if (System.IO.File.Exists(oldpath))
+                {
+                    System.IO.File.Delete(oldpath);
+                }
+                _unitofwork.Product.Delete(product);
+                _unitofwork.save();
+                return Json(new { success = true, message = "Successfully Deleted." });
+            }
+            
+            
+            
+            
 
         }
+        #endregion
 
 
     }
