@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using MyApp.DataAccessLayer.Infrastructure.IRepository;
 using MyApp.Models;
+
 using System.Diagnostics;
 
 namespace MyMVC.Areas.Customer.Controllers
@@ -20,6 +21,17 @@ namespace MyMVC.Areas.Customer.Controllers
         {
             IEnumerable<Product> products = _unitOfWork.Product.GetAll(includeProperties:"category");
             return View(products);
+        }
+        [HttpGet]
+        public IActionResult Details(int? id)
+        {
+            Cart cart = new Cart()
+            {
+                Product = _unitOfWork.Product.GetById(x => x.Id == id, includeProperties: "category"),
+                Count = 1
+            };
+            
+            return View(cart);
         }
 
         public IActionResult Privacy()

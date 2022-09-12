@@ -13,11 +13,17 @@ namespace MyApp.DataAccessLayer.Infrastructure.Repository
         public ICategoryRespository Category { get;private set; }
         public IProductRespository Product { get; private set; }
 
+        public IApplicationUserRespository ApplicationUser { get; private set; }
+
+        public ICartRespository Cart { get; private set; }
+
         public UnitOfWork(ApplicationDBContext dBContext)
         {
             _dbContext = dBContext;
             Category = new CategoryRepository(dBContext);
             Product = new ProductRepository(dBContext);
+            ApplicationUser = new ApplicationUserRepository(dBContext);
+            Cart = new CartRepository(dBContext);
         }
 
 
