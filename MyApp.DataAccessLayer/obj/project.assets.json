@@ -8007,11 +8007,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Projects\\MyMVC\\MyApp.DataAccessLayer\\MyApp.DataAccessLayer.csproj",
+      "projectUniqueName": "D:\\Projects\\MYMVC\\MyApp.DataAccessLayer\\MyApp.DataAccessLayer.csproj",
       "projectName": "MyApp.DataAccessLayer",
-      "projectPath": "D:\\Projects\\MyMVC\\MyApp.DataAccessLayer\\MyApp.DataAccessLayer.csproj",
+      "projectPath": "D:\\Projects\\MYMVC\\MyApp.DataAccessLayer\\MyApp.DataAccessLayer.csproj",
       "packagesPath": "C:\\Users\\Vaibhav\\.nuget\\packages\\",
-      "outputPath": "D:\\Projects\\MyMVC\\MyApp.DataAccessLayer\\obj\\",
+      "outputPath": "D:\\Projects\\MYMVC\\MyApp.DataAccessLayer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Vaibhav\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -8028,8 +8028,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\Projects\\MyMVC\\MyApp.Models\\MyApp.Models.csproj": {
-              "projectPath": "D:\\Projects\\MyMVC\\MyApp.Models\\MyApp.Models.csproj"
+            "D:\\Projects\\MYMVC\\MyApp.Models\\MyApp.Models.csproj": {
+              "projectPath": "D:\\Projects\\MYMVC\\MyApp.Models\\MyApp.Models.csproj"
             }
           }
         }

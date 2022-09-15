@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Projects\\MyMVC\\MyApp.CommonHelper\\MyApp.CommonHelper.csproj": {}
+    "D:\\Projects\\MYMVC\\MyApp.CommonHelper\\MyApp.CommonHelper.csproj": {}
   },
   "projects": {
-    "D:\\Projects\\MyMVC\\MyApp.CommonHelper\\MyApp.CommonHelper.csproj": {
+    "D:\\Projects\\MYMVC\\MyApp.CommonHelper\\MyApp.CommonHelper.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\MyMVC\\MyApp.CommonHelper\\MyApp.CommonHelper.csproj",
+        "projectUniqueName": "D:\\Projects\\MYMVC\\MyApp.CommonHelper\\MyApp.CommonHelper.csproj",
         "projectName": "MyApp.CommonHelper",
-        "projectPath": "D:\\Projects\\MyMVC\\MyApp.CommonHelper\\MyApp.CommonHelper.csproj",
+        "projectPath": "D:\\Projects\\MYMVC\\MyApp.CommonHelper\\MyApp.CommonHelper.csproj",
         "packagesPath": "C:\\Users\\Vaibhav\\.nuget\\packages\\",
         "outputPath": "D:\\Projects\\MYMVC\\MyApp.CommonHelper\\obj\\",
         "projectStyle": "PackageReference",
