@@ -17,6 +17,12 @@ namespace MyApp.DataAccessLayer.Infrastructure.Repository
             _dbContext = dbContext;
         }
 
+        public int DecreamentCartItem(Cart cart, int count)
+        {
+            cart.Count -= count;
+            return cart.Count;
+        }
+
         public int IncreamentCartItem(Cart cart, int count)
         {
             cart.Count += count;

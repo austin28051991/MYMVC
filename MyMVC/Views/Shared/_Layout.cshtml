@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - MyMVC</title>
     <link rel="stylesheet" href="~/css/bootswatch.css" />
+    <link rel="stylesheet" href="~/css/cart.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" />
     <link rel="stylesheet" href="//cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css" />
@@ -37,6 +38,12 @@
                         <li class="nav-item">
                             <a class="nav-link" asp-area="Admin" asp-controller="Product" asp-action="Index">Product</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="Customer" asp-controller="Cart" asp-action="Index" > <i class="bi bi-cart2"></i></a>
+                        </li>
+                       
+
+
                         @*<li class="nav-item">
                             <a class="nav-link" href="#">About</a>
                         </li>*@

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "qRic0t/RjkVCXgsGg052kPJlJzVKhVjduADRwdbzo84=",
+  "Hash": "iSZpNnyn0uKaByt7uaPlG1XXkcs9tXB2KBjWv/iFQns=",
   "Source": "MyMVC",
   "BasePath": "_content/MyMVC",
   "Mode": "Default",
@@ -1086,6 +1086,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\bootswatch.css"
+    },
+    {
+      "Identity": "D:\\Projects\\MYMVC\\MyMVC\\wwwroot\\css\\cart.css",
+      "SourceId": "MyMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\MYMVC\\MyMVC\\wwwroot\\",
+      "BasePath": "_content/MyMVC",
+      "RelativePath": "css/cart.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\cart.css"
     },
     {
       "Identity": "D:\\Projects\\MYMVC\\MyMVC\\wwwroot\\css\\site.css",
