@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "iSZpNnyn0uKaByt7uaPlG1XXkcs9tXB2KBjWv/iFQns=",
+  "Hash": "/Xhv42tfLXC9JB7xNGL4q2KSpWD1z8oqEkuzjsPP4b8=",
   "Source": "MyMVC",
   "BasePath": "_content/MyMVC",
   "Mode": "Default",
@@ -1120,6 +1120,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
+    },
+    {
+      "Identity": "D:\\Projects\\MYMVC\\MyMVC\\wwwroot\\css\\Summary.css",
+      "SourceId": "MyMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\MYMVC\\MyMVC\\wwwroot\\",
+      "BasePath": "_content/MyMVC",
+      "RelativePath": "css/Summary.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\Summary.css"
     },
     {
       "Identity": "D:\\Projects\\MYMVC\\MyMVC\\wwwroot\\favicon.ico",

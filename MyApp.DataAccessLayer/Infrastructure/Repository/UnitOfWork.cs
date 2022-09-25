@@ -1,4 +1,5 @@
 ﻿using MyApp.DataAccessLayer.Infrastructure.IRepository;
+using MyApp.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,6 +18,10 @@ namespace MyApp.DataAccessLayer.Infrastructure.Repository
 
         public ICartRespository Cart { get; private set; }
 
+        public IOrderHeaderRespository OrderHeader { get; private set; }
+
+        public IOrderDetailRespository OrderDetail { get; private set; }
+
         public UnitOfWork(ApplicationDBContext dBContext)
         {
             _dbContext = dBContext;
@@ -24,6 +29,8 @@ namespace MyApp.DataAccessLayer.Infrastructure.Repository
             Product = new ProductRepository(dBContext);
             ApplicationUser = new ApplicationUserRepository(dBContext);
             Cart = new CartRepository(dBContext);
+            OrderHeader = new OrderHeaderRepository(dBContext);
+            OrderDetail = new OrderDetailRepository(dBContext);
         }
 
 

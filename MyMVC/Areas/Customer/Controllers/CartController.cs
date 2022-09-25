@@ -73,5 +73,11 @@ namespace MyMVC.Areas.Customer.Controllers
 
         }
 
+        public IActionResult Summary()
+        {
+            return View();
+        }
+
+
     }
 }

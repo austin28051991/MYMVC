@@ -8011,7 +8011,7 @@
       "projectName": "MyApp.DataAccessLayer",
       "projectPath": "D:\\Projects\\MYMVC\\MyApp.DataAccessLayer\\MyApp.DataAccessLayer.csproj",
       "packagesPath": "C:\\Users\\Vaibhav\\.nuget\\packages\\",
-      "outputPath": "D:\\Projects\\MYMVC\\MyApp.DataAccessLayer\\obj\\",
+      "outputPath": "D:\\Projects\\MyMVC\\MyApp.DataAccessLayer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Vaibhav\\AppData\\Roaming\\NuGet\\NuGet.Config",
